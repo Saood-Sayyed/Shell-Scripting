@@ -1,0 +1,16 @@
+1 listing all files: ls
+2 check active working directory: pwd
+3 create file and open it: vi aws_resource_track.sh
+4 check content of file:  cat aws_resource_track.sh
+5 granting permission: chmod 777 aws_resource_track.sh
+6 executing shell script:  ./aws_resource_track.sh
+7 udate and install cron:
+	 sudo yum update
+   	 sudo yum install cronie
+   	 sudo systemctl enable crond
+   	 sudo systemctl start crond
+8 open cron file:  crontab -e
+9 delete cron file:  crontab -r
+10 crontab -e
+11 30 10 * * * aws_resource_track.sh   #(execute job everyday at 10.30)
+12 check content of cron file : crontab -l
